@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -a1 | grep -v '^\.\.$' | sort -d -f -k 1.1n,1.1 -k 1.2 | sed -e 's/$/\//' | tr '\n' ',' | sed 's/,$/\n/'
